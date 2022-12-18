@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next to the sea</title>
+</head>
+<body>
+    <style>
+        @font-face {
+  font-family: messina;
+  src: url(MessinaSans-Regular.woff);
+}
+@font-face {
+  font-family: ivymode;
+  src: url(IvyMode-Regular.woff);
+}
+body{
+    background-color: #E9EEF4;
+}
+
+        .logo-img{
+    float: left;
+    position: relative;
+    margin: 30px 143px 15px 10px;
+}
+.topnav {
+  background-color: none;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1C5D99;
+  text-align: center;
+  padding: 40px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: messina;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: none;
+  color: black;
+  text-decoration: underline;
+}
+.menu2{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1300px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.picture1{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+.text1{
+    position: relative;
+    font-size: 120px;
+    font-family: ivymode;
+    color: white;
+    text-align: center;
+    margin-top: -400px;
+}
+.text2{
+    position: relative;
+    font-size: 55px;
+    font-family: ivymode;
+    color: #1C5D99;
+    text-align: center;
+    margin-top: 250px;
+}
+.text3{
+    position: relative;
+    font-size: 55px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+}
+.text4{
+    position: relative;
+    font-size: 55px;
+    font-family: ivymode;
+    color: #1C5D99;
+    text-align: center;
+    margin-top: 100px;
+}
+.text5{
+    position: relative;
+    font-size: 55px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+    margin-top: 80px;
+}
+.text6{
+    position: relative;
+    font-size: 55px;
+    font-family: ivymode;
+    color: #1C5D99;
+    text-align: center;
+    margin-top: 100px;
+}
+.pictures{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-left: 600px;
+}
+.pictures1{
+  display: none;
+}
+.picture12{
+  display: none;
+}
+.popup{
+  position: relative;
+  text-align: right;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1430px;
+  font-size: 15px;
+  font-family: messina;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: white;
+  color: #1C5D99;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+@media only screen and (max-width: 400px) {
+  /* For mobile: */
+.menu2{
+  display: none;
+
+}
+.topnav{
+  display: none;
+}
+.popup{
+  display: none;
+}
+.picture1{
+  display: none;
+}
+.picture12{
+  display: block;
+  margin-top: 70px;
+}
+.text1{
+  font-size: 40px;
+  color: #1C5D99;
+  text-align: left;
+}
+.text2{
+  font-size: 30px;
+  margin-top: 350px;
+}
+.text3{
+  font-size: 25px;
+  margin-top: -20px;
+}
+.text4{
+  font-size: 30px;
+  margin-top: 30px;
+}
+.text5{
+  font-size: 25px;
+  margin-top: -20px;
+}
+.text6{
+  font-size: 30px;
+  margin-top: 30px;
+}
+.pictures{
+  display: none;
+}
+.pictures1{
+  display: block;
+  text-align: center;
+}
+}
+    </style>
+    <div class="menu2">
+      <a href="beginning.html"><img src="https://i.ibb.co/vQbB2fs/60817.png" alt="60817" width="54" height="54">></a>
+      <a href="#"><img src="https://i.ibb.co/jWWG0X8/1056952.png" alt="1056952" width="54" height="54"></a>
+      <a href="login.html"><img src="https://i.ibb.co/1MQHww9/1946429.png" alt="1946429" width="54" height="54">></a>
+    </div>
+    <div class="topnav">
+        <img class="logo-img" src="https://i.ibb.co/pyf9RvZ/logo1.png" width="65" height="65" alt="align box" ALIGN=CENTER>
+    <a href="discover1.html">Discover</a>
+    <a href="experiences.html">Experiences</a>
+    <a class="active" href="#contact">Contact</a>
+    
+  </div>
+  
+  <div class="picture1">
+    <img src="https://i.ibb.co/VDv0wW6/9.png" alt="picture1" width="1500" height="498">
+  </div>
+  <div class="picture12">
+    <img src="https://i.ibb.co/VDv0wW6/9.png" alt="picture1" width="366" height="321">
+  </div>
+  <div class="popup" onclick="myFunction()"><img src="https://i.ibb.co/ZzdQgfc/1380370w.png" alt="pic" height="60" width="60">
+    <span class="popuptext" id="myPopup">In order to chat with a local
+      <br> you need to sign in.
+    </span>
+  </div>
+  <p class="text1">
+    CONTACT US
+  </p>
+  <p class="text2">
+    Email
+  </p>
+  <p class="text3">
+    nexttothesea@gmail.com
+  </p>
+  <p class="text4">
+    Phone
+  </p>
+  <p class="text5">
+    +45 12 34 56 78
+  </p>
+  <p class="text6">
+    Social media
+  </p>
+  <div class="pictures">
+    <img src="https://i.ibb.co/mvTRVQX/facebook1.png" alt="facebook" height="100" width="100">
+    <img src="https://i.ibb.co/wYYrHZ5/instagram1.png" alt="instagram" height="100" width="100">
+    <img src="https://i.ibb.co/3pPnFj4/twitter1.png" alt="twitter" height="100" width="100">
+  </div>
+  <div class="pictures1">
+    <img src="https://i.ibb.co/mvTRVQX/facebook1.png" alt="facebook" height="50" width="50">
+    <img src="https://i.ibb.co/wYYrHZ5/instagram1.png" alt="instagram" height="50" width="50">
+    <img src="https://i.ibb.co/3pPnFj4/twitter1.png" alt="twitter" height="50" width="50">
+  </div>
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next to the sea</title>
+</head>
+<body>
+    <style>
+        @font-face {
+  font-family: messina;
+  src: url(MessinaSans-Regular.woff);
+}
+@font-face {
+  font-family: ivymode;
+  src: url(IvyMode-Regular.woff);
+}
+body{
+    background-color: #E9EEF4;
+}
+
+        .logo-img{
+    float: left;
+    position: relative;
+    margin: 30px 143px 15px 10px;
+}
+.topnav {
+  background-color: none;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1C5D99;
+  text-align: center;
+  padding: 40px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: messina;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: none;
+  color: black;
+  text-decoration: underline;
+}
+.menu2{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1300px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.text1{
+    position: relative;
+    color: black;
+    font-family: ivymode;
+    font-size: 60px;
+    text-align: center;
+    margin-top: 50px;
+}
+.picture1{
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+.text3{
+    position: absolute;
+    font-size: 20px;
+    font-family: messina;
+    padding: 10px;
+    background-color: white;
+    text-align: left;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -40px;
+}
+.text2{
+    position: absolute;
+    font-size: 50px;
+    font-family: ivymode;
+    background-color: white;
+    text-align: center;
+    top: 64%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.text4{
+    position: relative;
+    font-size: 50px;
+    font-family: ivymode;
+    color: black;
+    text-align: center;
+    margin-top: 300px;
+}
+.text5{
+    position: relative;
+    font-size: 30px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+}
+.text6{
+    position: relative;
+    font-size: 50px;
+    font-family: ivymode;
+    color: black;
+    text-align: center;
+}
+.text7{
+    position: relative;
+    font-size: 30px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+}
+.picture2{
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+.text8{
+    position: relative;
+    font-size: 50px;
+    font-family: ivymode;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+.text9{
+    position: relative;
+    font-size: 30px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: -50px;
+}
+.text10{
+    position: relative;
+    font-size: 50px;
+    font-family: ivymode;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: -40px;
+}
+.text11{
+    position: relative;
+    font-size: 30px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: -50px;
+}
+.text12{
+    position: relative;
+    font-size: 100px;
+    font-family: messina;
+    color: #1C5D99;
+    text-align: center;
+}
+.text13{
+    position: relative;
+    font-size: 40px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+    
+}
+.text14{
+    position: relative;
+    font-size: 50px;
+    font-family: ivymode;
+    color: black;
+    text-align: center;
+    
+}
+.text15{
+    position: relative;
+    font-size: 40px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+     
+}
+.text16{
+    position: absolute;
+    font-size: 50px;
+    font-family: ivymode;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    padding-left: 270px;
+    padding-right: 270px;
+    margin-left: 50px;
+}
+.text17{
+    position: absolute;
+    font-size: 30px;
+    font-family: messina;
+    color: black;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+    margin-top: 130px;
+    margin-left: 50px;
+}
+.picture3{
+    position: absolute;
+   margin-top: 400px;
+}
+footer{
+  color: white;
+}
+.footerpicture1{
+  position: relative;
+  margin-top: 1100px;
+} 
+.footertext1{
+  font-size: 35px;
+  font-family: ivymode;
+  position: relative;
+  color: black;
+  margin-top: -140px;
+  margin-left: 200px;
+}
+.footerpictures{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: -20px;
+  margin-left: 190px;
+}
+.footertext2{
+  font-size: 35px;
+  font-family: ivymode;
+  position: relative;
+  margin-top: -130px;
+  color: black;
+  margin-left: 1000px;
+}
+.footertext3{
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  
+  color: black;
+  margin-left: 1000px;
+  opacity: 50%;
+}
+.footertext4{
+  font-size: 30px;
+  font-family: messina;
+  position: relative;
+  
+  color: black;
+  margin-left: 1000px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 350px;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 10px;
+}
+.footertext5{
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  margin-top: 50px;
+  color: black;
+  margin-left: 600px;
+  
+}
+.footertext6{
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  margin-top: 20px;
+  color: black;
+  margin-left: 520px;
+  
+}
+.popup{
+  position: relative;
+  text-align: right;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1450px;
+  font-size: 15px;
+  font-family: messina;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: white;
+  color: #1C5D99;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+.picture12{
+  display: none;
+}
+.picture21{
+  display: none;
+}
+.picture31{
+  display: none;
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+@media only screen and (max-width: 400px) {
+  /* For mobile: */
+.menu2{
+  display: none;
+}
+.topnav{
+  display: none;
+}
+.text1{
+  font-size: 20px;
+  text-align: center;
+}
+.picture1{
+  display: none;
+}
+.picture12{
+ position: relative;
+ display: block;
+ margin-left: -8px;
+}
+.popup{
+  display: none;
+}
+.text2{
+  font-size: 15px;
+  position: relative;
+  margin-top: -50px;
+
+}
+.text3{
+  font-size: 12px;
+  position: absolute;
+  margin-top: -475px;
+}
+.text4{
+  font-size: 15px;
+  margin-top: 370px;
+  position: relative;
+}
+.text5{
+  font-size: 12px;
+}
+.text6{
+  font-size: 15px;
+}
+.text7{
+  font-size: 12px;
+}
+.picture2{
+  display: none;
+}
+.text8{
+  font-size: 15px;
+  margin-top: 210px;
+  position: relative;
+}
+.picture21{
+  position: absolute;
+  display: block;
+  margin-top: 20px;
+  text-align: center;
+  margin-left: 18px;
+}
+.text9{
+  font-size: 12px;
+  margin-top: 1px;
+}
+.text10{
+  font-size: 15px;
+  margin-top: 2px;
+}
+.text11{
+  font-size: 12px;
+  margin-top: 10px;
+}
+.text12{
+  font-size: 75px;
+  text-align: center;
+}
+.text13{
+  font-size: 12px;
+  margin-top: -70px;
+}
+.text14{
+  font-size: 14px;
+}
+.text15{
+  font-size: 12px;
+}
+.picture3{
+  display: none;
+}
+.text16{
+  font-size: 15px;
+  margin-left: -125px;
+  margin-top: -60px;
+}
+.text17{
+  font-size: 12px;
+  margin-left: -15px;
+  margin-top: 30px;
+}
+footer{
+  display: none;
+}
+.picture31{
+  display: block;
+  position: relative;
+  margin-top: 100px;
+  margin-left: -8px;
+}
+}
+
+    </style>
+    <div class="menu2">
+      <a href="beginning.html"><img src="https://i.ibb.co/vQbB2fs/60817.png" alt="60817" width="54" height="54">></a>
+      <a href="#"><img src="https://i.ibb.co/jWWG0X8/1056952.png" alt="1056952" width="54" height="54"></a>
+      <a href="login.html"><img src="https://i.ibb.co/1MQHww9/1946429.png" alt="1946429" width="54" height="54">></a>
+    </div>
+    <div class="topnav">
+        <img class="logo-img" src="https://i.ibb.co/pyf9RvZ/logo1.png" width="65" height="65" alt="align box" ALIGN=CENTER>
+    <a href="discover1.html">Discover</a>
+    <a class="active" href="#experiences">Experiences</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+  <div class="text1">
+    A thousand opportunities await for you
+  </div>
+  <div class="picture1">
+    <img src="https://i.ibb.co/QNqkfQT/6.png" alt="picture1" width="1500" height="498">
+  </div>
+  <div class="picture12">
+    <img src="https://i.ibb.co/QNqkfQT/6.png" alt="picture1" width="390" height="150">
+  </div>
+  <div class="popup" onclick="myFunction()"><img src="https://i.ibb.co/ZzdQgfc/1380370w.png" alt="pic" height="60" width="60">
+    <span class="popuptext" id="myPopup">In order to chat with a local
+      <br> you need to sign in.
+    </span>
+  </div>
+  <div class="text2">
+    The story of Marselisborg Memorial Park
+        
+  </div>
+  <div class="text3">
+    <p>
+        <br> Marselisborg Memorial Park was inaugurated in 1925 as an approx. 15 hectare area sloping
+        <br> towards the Bay of Aarhus and with a view of Skødshoved and Mols. To the south and
+        <br> north, the area was bounded by old beech forest and other vegetation.
+        <br>
+        <br> Lots of different trees and shrubs were planted in the park. It was originally the idea that
+        <br> the park should be a gathering place for Danes abroad when they were visiting their home
+        <br> country. However, this plan did not really get a foothold, partly because the Rebild parties
+        <br> at Rold Skov were so popular.
+    </p>
+  </div>
+  <p class="text4">
+    Memorial monument for the First World War
+  </p>
+  <p class="text5">
+     If you enter the memorial, you enter a large circular space. On the walls of the monument are engraved
+    <br> the names of the 4,144 people from Southern Jutland who, as Danish-minded people, had to fight in
+    <br> German uniforms and subsequently fell in the First World War. 
+  </p>
+  <p class="text6">
+    Close to Marselisborg Castle
+  </p>
+  <p class="text7">
+     As an extension to Marselisborg Memorial Park, you will find Marselisborg Castle, which contains a long
+    <br> and exciting history. The park is one of many beautiful parks in Aarhus .
+  </p>
+  <div class="picture2">
+    <img src="https://i.ibb.co/n7d6Sbx/7.png" alt="picture2" width="1400" height="448">
+  </div>
+  <div class="picture21">
+    <img src="https://i.ibb.co/n7d6Sbx/7.png" alt="picture2" width="333" height="128">
+  </div>
+  <p class="text8">
+    Trot, Monté & Canter at Jutland Racecourse
+  </p>
+  <p class="text9">
+    You can experience up to 35 race days a year, where you can both follow the horses or
+    <br> participate in one of the many audience competitions. 
+
+    <br> You can keep up to date with the program on Jydsk Væddeløpsbane's website .
+  </p>
+  <p class="text10">
+    For the children
+  </p>
+  <p class="text11">
+    Children are of course also welcome, and while the parents follow the horse races, there
+    <br> are both indoor and outdoor playgrounds, pony rides (on race days), and a home cinema.
+  </p>
+  <p class="text12">
+    "
+  </p>
+  <p class="text13">
+    "Som at være på en tidsrejse! En rigtig god ide til en weekend udflugt
+    <br> er en tur på væddeløbsbanen. Der er indendørs områder, og ligeledes
+    <br> rigeligt med udendørs sidde og stå områder. Der er legeplads og
+    <br> mulighed for at spille på hestene, eller få en drink eller lidt mad.
+    <br> Omgivelserne er af ældre dato - hvilket bidrager til stemningen."
+  </p>
+  <p class="text14">
+    In translation:
+  </p>
+  <p class="text15">
+    "Like being on a time travel! A really good idea for a weekend
+    <br> excursion is a trip to the racetrack. There are indoor areas, and also
+    <br> plenty of outdoor sitting and standing areas. There is a playground and
+    <br> the opportunity to play on the horses, or have a drink or some food. The
+    <br> surroundings are of an older date - which contributes to the
+    <br> atmosphere."
+  </p>
+  <div class="picture3">
+    <img src="https://i.ibb.co/M6mr3tY/8.png" alt="picture3" width="1500" height="498">
+  </div>
+  <div class="picture31">
+    <img src="https://i.ibb.co/M6mr3tY/8.png" alt="picture3" width="390" height="175">
+  </div>
+  <p class="text16">
+    Establishment of Forest Botanic Garden
+  </p>
+  <p class="text17">
+    It was an unattractive piece of forest, but even so forester Niels Johan Bang had taken a liking
+    <br> to the area. The many different soil types made the area ideal for an aboret – a collection of different
+    <br> trees and bushes. In addition, part of the land was on service land belonging to the forestry farm
+    <br> Louisenlund , which meant that it was literally in Bang's backyard.
+<br>
+<br> Forester Bang managed to get the city council on board with the idea, and in 1923 the Forest
+<br> Botanic Garden was established. At the same time, DKK 2,000 was set aside annually in the budget
+<br> for forest botanical experiments, so that the tree collection could be continuously expanded.
+<br> Although DKK 2,000 in the mid-1920s corresponded to just under DKK 60,000, it was still a modest
+<br> budget that woodcutter Bang had to start his collection. Together with his forester, Knudsgaard ,
+<br> he rolled up his sleeves, and after just six years the garden had over 1,000 different species and
+<br> varieties in its front garden. Many of the trees and bushes were obtained through Bang's circle of
+<br> acquaintances, who had taken an interest in the project.
+  </p>
+  
+
+<footer>
+    <div class="footerpicture1">
+      <img src="https://i.ibb.co/pyf9RvZ/logo1.png" alt="logo" height="146" width="148">
+    </div>
+    <p class="footertext1">
+      Next to the sea
+    </p>
+    <div class="footerpictures">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/rZk4VBW/facebook.png" alt="facebook" height="70" width="70"></a> 
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/k0BH2nC/instagram.png" alt="instagram" height="70" width="70"></a> 
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/rv24kRg/twitter.png" alt="twitter" height="70" width="70"></a> 
+    </div>
+    <p class="footertext2">
+      SUBSCRIBE
+    </p>
+    <p class="footertext3">
+      Enter your email to get notified for updates
+    </p>
+    <p class="footertext4">
+      Email
+    </p>
+    <p class="footertext5">
+      Terms & Conditions Privacy Policy
+    </p>
+    
+    <p class="footertext6">
+      Copyright 2022 Next to the sea, Ltd. All rights served
+    </p>
+  </footer>
+  <script>
+    // When the user clicks on div, open the popup
+    function myFunction() {
+      var popup = document.getElementById("myPopup");
+      popup.classList.toggle("show");
+    }
+    </script>
+</body>
+</html>

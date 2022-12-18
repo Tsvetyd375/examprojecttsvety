@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next to the sea</title>
+</head>
+<body>
+    <style>
+        @font-face {
+  font-family: messina;
+  src: url(MessinaSans-Regular.woff);
+}
+@font-face {
+  font-family: ivymode;
+  src: url(IvyMode-Regular.woff);
+}
+body{
+    background-color: #E9EEF4;
+}
+
+        .logo-img{
+    float: left;
+    position: relative;
+    margin: 30px 143px 15px 10px;
+}
+.topnav {
+  background-color: none;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1C5D99;
+  text-align: center;
+  padding: 40px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: messina;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: none;
+  color: black;
+  text-decoration: underline;
+}
+.picture1{
+    display: block;
+  margin-left: 50px;
+  margin-right: auto;
+}
+.picture2{
+    position: absolute;
+  top: 550px;
+  left: 225px;
+  opacity: 50%;
+}
+.picture3{
+    position: absolute;
+    top: 547px;
+    left: 80px;
+    transform: rotate(180deg);
+}
+p{
+    position: absolute;
+    color: white;
+    font-family: ivymode;
+    font-size: 70px;
+    top: 250px;
+    margin-left: 75px;
+}
+.text2{
+  color: #1C5D99;
+  text-align: center;
+  font-size: 70px;
+  font-family: ivymode;
+  position: inherit;
+}
+.picture5{
+  position: block;
+  margin-left: 50px;
+  margin-right: auto;
+  float: left;
+  margin-top: 200px;
+}
+.text3{
+  text-align: center;
+  float: right;
+  font-family: ivymode;
+  font-size: 20px;
+  position: relative;
+  color: black;
+  margin-right: 0px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  border-color: #1C5D99;
+  background-color: white;
+  border-radius: 10px;
+}
+.locationpicture{
+  float: left;
+  position: absolute;
+  margin-top: 1050px;
+  margin-left: 200px;
+}
+.text4{
+  color: #1C5D99;
+  font-size: 40px;
+  font-family: messina;
+  position: absolute;
+  float: left;
+  margin-top: 1830px;
+ margin-left: 500px;
+}
+.buspicture{
+  float: left;
+  position: absolute;
+  margin-top: 1250px;
+  margin-left: 175px;
+}
+.text5{
+  color: #1C5D99;
+  font-size: 40px;
+  font-family: messina;
+  position: absolute;
+  float: left;
+  margin-top: 2070px;
+  margin-left: 500px;
+}
+.text6{
+  color: black;
+  font-family: messina;
+  font-size: 70px;
+  float: left;
+  position: absolute;
+  margin-top: 2100px;
+}
+.box{
+  width: 1600px;
+  height: 400;
+  background-color: white;
+  position: relative;
+}
+.text7{
+  color: black;
+  font-size: 20px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 2320px;
+  background-color: white;
+  padding-right: 350px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  border-radius: 20px;
+}
+.karolina{
+  font-size: 30px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 2250px;
+  color: black;
+  margin-left: 150px;
+}
+.reviewpicture1{
+  position: absolute;
+  margin-top: 1495px;
+  margin-left: 75px;
+}
+.date1{
+  color: black;
+  opacity: 50%;
+  font-size: 25px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 2500px;
+}
+.comment1{
+  color: black;
+  opacity: 50%;
+  font-size: 20px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 2500px;
+  margin-left: 500px;
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+.likebutton{
+  position: absolute;
+  margin-top: 1750px;
+  margin-left: 1300px;
+}
+.likebutton1{
+  position: absolute;
+  margin-top: 1750px;
+  margin-left: 1400px;
+  transform: rotateX(180deg);
+}
+.button1{
+  position: absolute;
+  font-size: 50px;
+  font-family: ivymode;
+  color: white;
+  margin-top: 2000px;
+  padding: 50px;
+  background-color: #1C5D99;
+  border-color: none;
+  border-radius: 10px;
+  margin-left: -160px;
+}
+footer{
+  color: white;
+}
+.footerpicture1{
+  position: absolute;
+  margin-top: 2400px;
+} 
+.footertext1{
+  font-size: 35px;
+  font-family: ivymode;
+  position: absolute;
+  color: black;
+  margin-top: 3150px;
+  margin-left: 200px;
+}
+.footerpictures{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 2470px;
+  margin-left: 190px;
+}
+.footertext2{
+  font-size: 35px;
+  font-family: ivymode;
+  position: absolute;
+  margin-top: 3100px;
+  color: black;
+  margin-left: 1000px;
+}
+.footertext3{
+  font-size: 20px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 3150px;
+  color: black;
+  margin-left: 1000px;
+  opacity: 50%;
+}
+.footertext4{
+  font-size: 30px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 3200px;
+  color: black;
+  margin-left: 1000px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 350px;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 10px;
+}
+.footertext5{
+  font-size: 20px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 3370px;
+  color: black;
+  margin-left: 600px;
+  
+}
+.footertext6{
+  font-size: 20px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 3420px;
+  color: black;
+  margin-left: 520px;
+  
+}
+.menu2{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1300px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.additionaltext{
+    font-family: messina;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    margin-top: 1650px;
+}
+.popup{
+  position: relative;
+  text-align: right;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1400px;
+  font-size: 15px;
+  font-family: messina;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: white;
+  color: #1C5D99;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+    </style>
+    <div class="menu2">
+      <a href="beginning.html"><img src="https://i.ibb.co/vQbB2fs/60817.png" alt="60817" width="54" height="54">></a>
+      <a href="#"><img src="https://i.ibb.co/jWWG0X8/1056952.png" alt="1056952" width="54" height="54"></a>
+      <a href="login.html"><img src="https://i.ibb.co/1MQHww9/1946429.png" alt="1946429" width="54" height="54">></a>
+    </div>
+    <div class="topnav">
+        <img class="logo-img" src="https://i.ibb.co/pyf9RvZ/logo1.png" width="65" height="65" alt="align box" ALIGN=CENTER>
+    <a class="active" href="#discover">Discover</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+  
+  <p>Racing and panoramic views
+  </p>
+  <div class="picture1">
+    <img src="https://i.ibb.co/hBWTt6y/10.png" alt="picture21" width="1400">
+    </div>
+    <div class="picture2">
+    <img src="https://i.ibb.co/0JmDLX7/Group-1.png" alt="picture2" width="98" height="98">
+  </div>
+  <div class="picture3">
+    <a href="discover2.html"> <img src="https://i.ibb.co/0JmDLX7/Group-1.png" alt="picture3" width="98" height="98"></a>
+  </div>
+  <div class="popup" onclick="myFunction()"><img src="https://i.ibb.co/ZzdQgfc/1380370w.png" alt="pic" height="60" width="60">
+    <span class="popuptext" id="myPopup">In order to chat with a local
+      <br> you need to sign in.
+    </span>
+  </div>
+  <p class="text2">
+    Jutland Racecourse
+  </p>
+  <p class="text3">
+    This is situated as a scenic oasis 
+<br>    close to the city centre, 
+<br> and is a daily breather for many people  
+<br>
+<br> Jydsk Væddeløpsbane is only a 20-minute walk 
+<br> from Aarhus C and 
+<br> is close to Tivoli Friheden , Marselisborg Castle
+<br> and the Memorial Park. Jydsk Racecourse invites
+<br> you to an experience with delicious food, 
+<br> equestrian sports, games and excitement in cozy 
+<br> surroundings with modern facilities. Bring the
+<br> family, employees or staff association along. You
+<br> will be thoroughly introduced to the sport of
+<br> horse racing with the possibility of a tour of 
+<br> stables, stable tips and games on horses.
+  </p>
+  <div class="picture5">
+<img src="https://i.ibb.co/qdJ1rNj/picture6.png" alt="picture4" height="675" width="715">
+  </div>
+  <div class="locationpicture">
+    <img src="https://i.ibb.co/6FzvrJG/177363.png" alt="location" height="148" width="148">
+  </div>
+  <p class="additionaltext">
+    Note: Prices
+<br> There is free access to normal race days and on major race days, access costs DKK 50.00. Parking costs DKK 30.00 on all race days.
+  </p>
+  <p class="text4">
+    Observatorievejen 2, 8000 Aarhus
+  </p>
+  <div class="buspicture">
+    <img src="https://i.ibb.co/7SjbW5j/40041744.png" alt="picture5" height="200" width="200">
+  </div>
+  <p class="text5">
+    17, Væddeløbsbanen/Carl Nielsens Vej (Aarhus Kom)
+  </p>
+  <p class="text6">
+Reviews
+  </p>
+  <p class="karolina">
+    Karolina
+  </p>
+    <div class="reviewpicture1">
+      <img src="https://i.ibb.co/72bt6dS/5.png" alt="reviewpicture1" height="50" width="50">
+    </div>
+  
+  <p class="text7">
+   <br> This is a wonderful place for people who love horses. You don't have to gamble on horses, you can just enjoy the 
+   <br> beautiful animals. It's fun to be there when you've never been to a racetrack before
+   </p>
+   <p class="date1">
+    May 2020
+   </p>
+   <p class="comment1">
+    Add a comment...
+   </p>
+   <div class="likebutton">
+    <img src="https://i.ibb.co/JRkYNXF/2107956.png" alt="like" height="52" width="52">
+   </div>
+   <div class="likebutton1">
+    <img src="https://i.ibb.co/JRkYNXF/2107956.png" alt="like" height="52" width="52">
+   </div>
+   <button class="button1">
+    Write a review
+   </button>
+
+<footer>
+  <div class="footerpicture1">
+    <img src="https://i.ibb.co/pyf9RvZ/logo1.png" alt="logo" height="146" width="148">
+  </div>
+  <p class="footertext1">
+    Next to the sea
+  </p>
+  <div class="footerpictures">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/rZk4VBW/facebook.png" alt="facebook" height="70" width="70"></a> 
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/k0BH2nC/instagram.png" alt="instagram" height="70" width="70"></a> 
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/rv24kRg/twitter.png" alt="twitter" height="70" width="70"></a> 
+  </div>
+  <p class="footertext2">
+    SUBSCRIBE
+  </p>
+  <p class="footertext3">
+    Enter your email to get notified for updates
+  </p>
+  <p class="footertext4">
+    Email
+  </p>
+  <p class="footertext5">
+    Terms & Conditions Privacy Policy
+  </p>
+  
+  <p class="footertext6">
+    Copyright 2022 Next to the sea, Ltd. All rights served
+  </p>
+</footer>
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+</body>
+</html>

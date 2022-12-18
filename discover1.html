@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Next to the sea</title>
+</head>
+<body>
+    <style>
+        @font-face {
+  font-family: messina;
+  src: url(MessinaSans-Regular.woff);
+}
+@font-face {
+  font-family: ivymode;
+  src: url(IvyMode-Regular.woff);
+}
+body{
+    background-color: #E9EEF4;
+}
+
+        .logo-img{
+    float: left;
+    position: relative;
+    margin: 30px 143px 15px 10px;
+}
+.topnav {
+  background-color: none;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #1C5D99;
+  text-align: center;
+  padding: 40px 16px;
+  text-decoration: none;
+  font-size: 30px;
+  font-family: messina;
+}
+
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: none;
+  color: black;
+  text-decoration: underline;
+}
+.picture1{
+    display: block;
+  margin-left: 50px;
+  margin-right: auto;
+}
+.picture2{
+    position: absolute;
+  top: 550px;
+  left: 225px;
+}
+.picture3{
+    position: absolute;
+    top: 550px;
+    left: 80px;
+}
+p{
+    position: absolute;
+    color: white;
+    font-family: ivymode;
+    font-size: 70px;
+    top: 250px;
+    margin-left: 75px;
+}
+.text2{
+  color: #1C5D99;
+  text-align: center;
+  font-size: 70px;
+  font-family: ivymode;
+  position: relative;
+  margin-top: -200px;
+}
+.picture4{
+  position: relative;
+  margin-left: 50px;
+  margin-right: auto;
+  float: left;
+  margin-top: 250px;
+}
+.text3{
+  text-align: center;
+  float: right;
+  font-family: ivymode;
+  font-size: 20px;
+  position: relative;
+  color: black;
+  margin-right: 0px;
+  padding-top: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  border-color: #1C5D99;
+  background-color: white;
+  border-radius: 10px;
+  margin-top: 100px;
+}
+.locationpicture{
+  float: left;
+  position: relative;
+  text-align: left;
+  margin-top: 1000px;
+  margin-left: -560px;
+}
+.text4{
+  color: #1C5D99;
+  font-size: 40px;
+  font-family: messina;
+  position: relative;
+  float: left;
+  margin-top: 200px;
+ margin-left: -300px;
+}
+.buspicture{
+  float: left;
+  position: relative;
+  text-align: left;
+  margin-top: 600px;
+  margin-left: -860px;
+}
+.text5{
+  color: #1C5D99;
+  font-size: 40px;
+  font-family: messina;
+  position: relative;
+  float: left;
+  margin-top: 70px;
+  margin-left: 470px;
+}
+.text6{
+  color: black;
+  font-family: messina;
+  font-size: 70px;
+  float: left;
+  position: relative;
+}
+.box{
+  width: 1600px;
+  height: 400;
+  background-color: white;
+  position: relative;
+}
+.text7{
+  color: black;
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  margin-top: -200px;
+  background-color: white;
+  padding-right: 350px;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 40px;
+  border-radius: 20px;
+}
+.peter{
+  font-size: 30px;
+  font-family: messina;
+  position: relative;
+  color: black;
+  margin-left: 150px;
+  margin-top: 1350px;
+  margin-right: 700px;
+}
+.reviewpicture1{
+  position: relative;
+  margin-left: 80px;
+  margin-top: 250px;
+}
+.date1{
+  color: black;
+  opacity: 50%;
+  font-size: 25px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 2350px;
+}
+.comment1{
+  color: black;
+  opacity: 50%;
+  font-size: 20px;
+  font-family: messina;
+  position: absolute;
+  margin-top: 2350px;
+  margin-left: 500px;
+  padding-left: 20px;
+  padding-right: 400px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  border-radius: 20px;
+}
+.likebutton{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 1300px;
+}
+.likebutton1{
+  position: absolute;
+  margin-top: 270px;
+  margin-left: 1400px;
+  transform: rotateX(180deg);
+}
+.button1{
+  position: absolute;
+  font-size: 50px;
+  font-family: ivymode;
+  color: white;
+  margin-top: 450px;
+  padding: 50px;
+  background-color: #1C5D99;
+  border-color: none;
+  border-radius: 10px;
+  margin-left: 600px;
+}
+footer{
+  color: white;
+}
+.footerpicture1{
+  position: relative;
+  margin-top: 1100px;
+} 
+.footertext1{
+  font-size: 35px;
+  font-family: ivymode;
+  position: relative;
+  color: black;
+  margin-top: -400px;
+  margin-left: 200px;
+}
+.footerpictures{
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 270px;
+  margin-left: 190px;
+}
+.footertext2{
+  font-size: 35px;
+  font-family: ivymode;
+  position: relative;
+  margin-top: -400px;
+  color: black;
+  margin-left: 1000px;
+}
+.footertext3{
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  
+  color: black;
+  margin-left: 1000px;
+  opacity: 50%;
+}
+.footertext4{
+  font-size: 30px;
+  font-family: messina;
+  position: relative;
+  
+  color: black;
+  margin-left: 1000px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 350px;
+  background-color: white;
+  opacity: 50%;
+  border-radius: 10px;
+}
+.footertext5{
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  margin-top: 50px;
+  color: black;
+  margin-left: 600px;
+  
+}
+.footertext6{
+  font-size: 20px;
+  font-family: messina;
+  position: relative;
+  margin-top: 20px;
+  color: black;
+  margin-left: 520px;
+  
+}
+.menu2{
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  margin-left: 1300px;
+  margin-top: 40px;
+  justify-content: space-between;
+}
+.bottombar{
+  display: none;
+}
+.popup{
+  position: relative;
+  text-align: right;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 1400px;
+  font-size: 15px;
+  font-family: messina;
+}
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: white;
+  color: #1C5D99;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+}
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s
+}
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+@media only screen and (max-width: 400px) {
+  /* For mobile: */
+.menu2{
+  display: none;
+}
+.bottombar {
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #1C5D99;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav{
+  display: none;
+}
+.p{
+  display: none;
+}
+.picture1{
+  width: 355px;
+  height: 581px;
+}
+
+
+}
+
+    </style>
+    <div class="menu2">
+      <a href="beginning.html"><img src="https://i.ibb.co/vQbB2fs/60817.png" alt="60817" width="54" height="54">></a>
+      <a href="#"><img src="https://i.ibb.co/jWWG0X8/1056952.png" alt="1056952" width="54" height="54"></a>
+      <a href="login.html"><img src="https://i.ibb.co/1MQHww9/1946429.png" alt="1946429" width="54" height="54">></a>
+    </div>
+    <div class="topnav">
+        <img class="logo-img" src="https://i.ibb.co/pyf9RvZ/logo1.png" alt="logo1"  width="65" height="65" alt="align box" ALIGN=CENTER>
+    <a class="active" href="#discover">Discover</a>
+    <a href="experiences.html">Experiences</a>
+    <a href="contact.html">Contact</a>
+    
+  </div>
+  
+  <p>An urban
+    <br> excursion destination
+  </p>
+  <div class="picture1">
+    <img src="https://i.ibb.co/CPy0vQk/picture1.png" alt="picture1" width="1400">
+    </div>
+    <div class="picture2">
+    <a href="discover2.html"><img src="https://i.ibb.co/0JmDLX7/Group-1.png" alt="picture2" width="98" height="98"></a>
+  </div>
+  <div class="picture3">
+    <img src="https://i.ibb.co/kMW14dg/Group-2.png" alt="picture3" width="98" height="98">
+  </div>
+  <div class="popup" onclick="myFunction()"><img src="https://i.ibb.co/ZzdQgfc/1380370w.png" alt="pic" height="60" width="60">
+    <span class="popuptext" id="myPopup">In order to chat with a local
+      <br> you need to sign in.
+    </span>
+  </div>
+  <p class="text2">
+    Forest Botanical Garden
+  </p>
+  <p class="text3">
+    The beautiful natural oasis with around 
+<br> 900 different species of trees and shrubs  
+<br>
+<br> The garden was laid out in 1923, and
+<br> in addition to what 
+<br> has been planted over time, 
+<br> it also contains several majestic, old oak 
+<br> and beech trees from before the garden was built. 
+<br> The trees form a kind of upper floor in the 
+<br> garden and contribute to the wonderful, troll-
+<br> like feel that characterizes Forsthaven.
+  </p>
+  <div class="picture4">
+<img src="https://i.ibb.co/ynNRfGG/picture4.png" alt="picture4" height="675" width="715">
+  </div>
+  <div class="locationpicture">
+    <img src="https://i.ibb.co/6FzvrJG/177363.png" alt="location" height="148" width="148">
+  </div>
+  <p class="text4">
+    Skovridervej 20, 8000 Aarhus C
+  </p>
+  <div class="buspicture">
+    <img src="https://i.ibb.co/7SjbW5j/40041744.png" alt="picture5" height="200" width="200">
+  </div>
+  <p class="text5">
+    17, Væddeløbsbanen/Carl Nielsens Vej (Aarhus Kom); 
+    <br> 100, 103, 302, Kongevejen/Oddervej (Aarhus Kom)
+  </p>
+  <p class="text6">
+Reviews
+  </p>
+  <p class="peter">
+    Peter
+  </p>
+    <div class="reviewpicture1">
+      <img src="https://i.ibb.co/dpTF4q5/2.png" alt="reviewpicture1" height="50" width="50">
+    </div>
+  
+  <p class="text7">
+    <br> Historical, small botanical garden, which especially in May and June is worth a visit.
+    <br> Several spicies of old tall trees and beautifull magnolia. Easy access from backside of Charlottenlund Station. 
+    <br> I really enjoyed the visit with my family and would definitely visit again!
+   </p>
+   <p class="date1">
+    April 2018
+   </p>
+   <p class="comment1">
+    Add a comment...
+   </p>
+   <div class="likebutton">
+    <img src="https://i.ibb.co/JRkYNXF/2107956.png" alt="like" height="52" width="52">
+   </div>
+   <div class="likebutton1">
+    <img src="https://i.ibb.co/JRkYNXF/2107956.png" alt="like" height="52" width="52">
+   </div>
+   <button class="button1">
+    Write a review
+   </button>
+
+<footer>
+  <div class="footerpicture1">
+    <img src="https://i.ibb.co/pyf9RvZ/logo1.png" alt="logo" height="146" width="148">
+  </div>
+  <p class="footertext1">
+    Next to the sea
+  </p>
+  <div class="footerpictures">
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/rZk4VBW/facebook.png" alt="facebook" height="70" width="70"></a> 
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/k0BH2nC/instagram.png" alt="instagram" height="70" width="70"></a> 
+    <a href="https://imgbb.com/"><img src="https://i.ibb.co/rv24kRg/twitter.png" alt="twitter" height="70" width="70"></a> 
+  </div>
+  <p class="footertext2">
+    SUBSCRIBE
+  </p>
+  <p class="footertext3">
+    Enter your email to get notified for updates
+  </p>
+  <p class="footertext4">
+    Email
+  </p>
+  <p class="footertext5">
+    Terms & Conditions Privacy Policy
+  </p>
+  
+  <p class="footertext6">
+    Copyright 2022 Next to the sea, Ltd. All rights served
+  </p>
+</footer>
+<script>
+  // When the user clicks on div, open the popup
+  function myFunction() {
+    var popup = document.getElementById("myPopup");
+    popup.classList.toggle("show");
+  }
+  </script>
+<div class="bottombar">
+  <a href="#" class="active"> <img src="https://i.ibb.co/NmQVM7d/compass-icon-272.png" alt="discover" width="30px" height="30px"> </a>
+  <a href="experiences.html"> <img src="https://i.ibb.co/rknp3Nk/27011903.png" alt="experiences" width="44px" height="44px"> </a>
+  <a href="contact.html"> <img src="https://i.ibb.co/Tw396m8/phone-call-2-3.png" alt="contact" width="25px" height="25px"> </a>
+  <a href="login.html"> <img src="https://i.ibb.co/FH82dR0/1946429w.png" alt="account" width="30px" height="30px"> </a>
+  <a href="#"> <img src="https://i.ibb.co/JqQSkCq/1380370w.png" alt="chat" width="30px" height="30px"></a>
+</div>
+
+
+</body>
+</html>
